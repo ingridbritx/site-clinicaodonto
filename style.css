@@ -127,12 +127,13 @@ header {
 }
 
 /* Imagem Banner */
-.banner-image {
-  max-width: 400px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
+
 
 .banner-image img {
   width: 100%;
@@ -363,3 +364,4 @@ header {
 .footer-links a:hover {
   color: #f5c86e;
 }
+
