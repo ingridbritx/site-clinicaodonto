@@ -134,9 +134,12 @@ header {
 }
 
 .banner-image img {
-  max-width: 100%;
+  max-width: 300px; /* ajusta o tamanho da imagem */
+  width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;   /* centraliza */
+  border-radius: 10px; /* opcional: cantos arredondados */
 }
 
 
@@ -364,6 +367,7 @@ header {
 .footer-links a:hover {
   color: #f5c86e;
 }
+
 
 
 
