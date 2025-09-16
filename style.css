@@ -128,19 +128,22 @@ header {
 
 /* Imagem Banner */
 .banner-image {
-  max-width: 350px;   /* controla o tamanho */
-  margin: 0 auto;     /* centraliza */
+  max-width: 350px;
+  margin: 0 auto;       /* centraliza horizontalmente */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: block;       /* garante que o margin funcione */
 }
 
+
 .banner-image img {
-  width: 100%;   /* ocupa toda a largura do container */
-  height: auto;  /* mantém a proporção */
+  width: 100%;
+  height: auto;
   display: block;
-  object-fit: cover; /* ajusta se precisar cortar */
+  object-fit: cover;
 }
+
 
 
 /* Seções */
@@ -366,5 +369,6 @@ header {
 .footer-links a:hover {
   color: #f5c86e;
 }
+
 
 
