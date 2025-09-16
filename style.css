@@ -135,13 +135,12 @@ header {
 }
 
 .banner-image img {
-  max-width: 40%; /* ocupa até 40% da largura do banner */
+  max-width: 500px; /* ou 600px */
+  width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
 }
-
-
 
 /* Seções */
 .section {
@@ -366,6 +365,7 @@ header {
 .footer-links a:hover {
   color: #f5c86e;
 }
+
 
 
 
