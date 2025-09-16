@@ -96,9 +96,10 @@ header {
 
 .banner-content {
   display: flex;
-  flex-direction: column; /* força texto e imagem ficarem empilhados */
-  align-items: center;    /* centraliza tudo */
-  text-align: center;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  text-align: left;
+  gap: 40px; /* espaço entre texto e imagem */
 }
 
 
@@ -134,14 +135,12 @@ header {
 }
 
 .banner-image img {
-  max-width: 300px; /* ajusta o tamanho da imagem */
+  max-width: 300px;
   width: 100%;
   height: auto;
+  border-radius: 10px;
   display: block;
-  margin: 0 auto;   /* centraliza */
-  border-radius: 10px; /* opcional: cantos arredondados */
 }
-
 
 
 /* Seções */
@@ -367,6 +366,7 @@ header {
 .footer-links a:hover {
   color: #f5c86e;
 }
+
 
 
 
