@@ -96,9 +96,9 @@ header {
 
 .banner-content {
   display: flex;
-  align-items: center;   /* centraliza verticalmente */
-  justify-content: space-between; /* texto de um lado, imagem do outro */
-  flex-wrap: wrap; /* garante que no mobile quebre para baixo */
+  flex-direction: column; /* força texto e imagem ficarem empilhados */
+  align-items: center;    /* centraliza tudo */
+  text-align: center;
 }
 
 
@@ -364,6 +364,7 @@ header {
 .footer-links a:hover {
   color: #f5c86e;
 }
+
 
 
 
