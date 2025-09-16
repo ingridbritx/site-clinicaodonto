@@ -367,6 +367,35 @@ header {
   color: #f5c86e;
 }
 
+.banner-image img,
+.sobre-image img {
+  width: 100%;
+  max-width: 500px;      /* mesma largura máxima */
+  aspect-ratio: 4/3;     /* mesma proporção */
+  object-fit: cover;      /* evita distorção */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.banner-content,
+.sobre-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;   /* espaço entre texto e imagem */
+  flex-wrap: wrap;  /* permite quebrar linha em telas pequenas */
+}
+
+@media (max-width: 768px) {
+  .banner-image img,
+  .sobre-image img {
+    max-width: 90%;  /* ocupa quase toda a tela em dispositivos menores */
+  }
+}
+
+
+
 
 
 
