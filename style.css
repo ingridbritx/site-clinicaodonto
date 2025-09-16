@@ -370,29 +370,25 @@ header {
 .banner-image img,
 .sobre-image img {
   width: 100%;
-  max-width: 500px;      /* mesma largura máxima */
-  aspect-ratio: 4/3;     /* mesma proporção */
-  object-fit: cover;      /* evita distorção */
+  max-width: 500px;    /* mesma largura máxima */
+  height: 100%;         /* preenche altura do container */
+  object-fit: cover;     /* mantém proporção e corta o excesso */
   border-radius: 12px;
   display: block;
   margin: 0 auto;
 }
 
-.banner-content,
-.sobre-content {
+.banner-image,
+.sobre-image {
+  height: 300px; /* mesma altura para ambos */
+  overflow: hidden; /* corta o excesso da imagem */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;   /* espaço entre texto e imagem */
-  flex-wrap: wrap;  /* permite quebrar linha em telas pequenas */
 }
 
-@media (max-width: 768px) {
-  .banner-image img,
-  .sobre-image img {
-    max-width: 90%;  /* ocupa quase toda a tela em dispositivos menores */
-  }
 }
+
 
 
 
